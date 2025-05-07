@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Moda Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Moda<span>Elegante</span></a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="feminino.html">Feminino</a></li>
+                        <li><a href="masculino.html">Masculino</a></li>
+                        <li><a href="infantil.html">Infantil</a></li>
+                        <li><a href="acessorios.html">Acessórios</a></li>
+                        <li class="auth-links">
+                            <!-- Será preenchido pelo JavaScript -->
+                        </li>
+                        <li>
+                            <a href="carrinho.html" class="cart-link">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h1>Meu Perfil</h1>
+            </div>
+            
+            <div class="profile-sections">
+                <div class="profile-section">
+                    <h2><i class="fas fa-user"></i> Informações Pessoais</h2>
+                    <div class="profile-info">
+                        <p><strong>Nome:</strong> <span id="profile-name"></span></p>
+                        <p><strong>E-mail:</strong> <span id="profile-email"></span></p>
+                        <button class="btn btn-edit" id="edit-profile">Editar Perfil</button>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2><i class="fas fa-shopping-bag"></i> Minhas Compras</h2>
+                    <div class="orders-list">
+                        <p>Você ainda não realizou nenhuma compra.</p>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2><i class="fas fa-key"></i> Segurança</h2>
+                    <div class="account-settings">
+                        <button class="btn btn-change-password" id="change-password">Alterar Senha</button>
+                        <button class="btn btn-logout" id="logout-button">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <!-- Rodapé igual ao index.html -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

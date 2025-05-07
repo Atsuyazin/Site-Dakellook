@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Moda Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Moda<span>Elegante</span></a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="feminino.html">Feminino</a></li>
+                        <li><a href="masculino.html">Masculino</a></li>
+                        <li><a href="infantil.html">Infantil</a></li>
+                        <li><a href="carrinho.html" class="cart-link active">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Conteúdo do Carrinho -->
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Seu Carrinho de Compras</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items-container">
+                    <div class="cart-items-header">
+                        <h3>Produtos</h3>
+                        <h3>Preço</h3>
+                        <h3>Quantidade</h3>
+                        <h3>Total</h3>
+                    </div>
+                    
+                    <div class="cart-items">
+                        <!-- Itens serão carregados via JavaScript -->
+                        <div class="empty-cart-message">
+                            <p>Seu carrinho está vazio</p>
+                            <a href="index.html" class="btn">Continuar Comprando</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Resumo do Pedido</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span class="subtotal">R$ 0,00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Frete</span>
+                            <span class="shipping">Grátis</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="total-price">R$ 0,00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-checkout">Finalizar Compra</button>
+                    <a href="index.html" class="continue-shopping">Continuar Comprando</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="container">
+            <!-- Mesmo rodapé das outras páginas -->
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
